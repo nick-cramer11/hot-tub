@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Topics in the Hot Tub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hot Tub Icon -->
+        <img src="hot_tub_icon.png" alt="Hot Tub Icon" class="hot-tub-icon">
+
+        <!-- Title -->
+        <h1 class="matemasie-regular">Hot Topics in the Hot Tub</h1>
+
+        <!-- Dropdown menu for selecting category -->
+        <label for="category-select" class="roboto-condensed-category">Select a category:</label>
+        <select id="category-select" class="roboto-condensed-dropdown">
+            <option value="all">All Categories</option>
+            <option value="general">General Interests</option>
+            <option value="preferences">Personal Preferences and Habits</option>
+            <option value="values">Values, Beliefs, and Outlook</option>
+            <option value="history">Personal History and Experiences</option>
+            <option value="self_reflection">Self-Reflection</option>
+            <option value="deep">Deep and Intimate Questions</option>
+            <option value="hypothetical">Hypothetical and Future-Oriented Questions</option>
+        </select>
+
+        <!-- Question Display -->
+        <div id="question-display" class="question-box">
+            <span id="question-text">Click the button to generate a question!</span>
+        </div>
+
+        <!-- Generate Question Button -->
+        <button id="generate-button" class="roboto-condensed-button" type="button">Generate Question</button>
+
+        <!-- Loading Indicator -->
+        <div id="loading-indicator" class="loading-indicator" style="display: none;">Loading...</div>
+    </div>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" type="button">🌙</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
